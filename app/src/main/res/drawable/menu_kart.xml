@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:drawable="@drawable/cart_black"
+        android:gravity="center" >
+        <solid android:color="#000000" />
+
+    </item>
+
+   <!-- <item
+        android:id="@+id/ic_group_count"
+        android:drawable="@color/white" />-->
+
+</layer-list>

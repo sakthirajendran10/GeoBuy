@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/home_ll"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/primaryColorBlack"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/home_view_switch"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Nearby Offers"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true" />
+
+                <LinearLayout
+                    android:id="@+id/distance_filter_view"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/location_text"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        />
+
+                    <!-- <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                         android:id="@+id/filter_by_distance"
+                         android:layout_width="150dp"
+                         android:layout_height="wrap_content"
+                         android:tag="@string/app_name"
+                         android:tooltipText="Distance"
+                         app:dsb_indicatorTextAppearance="@string/app_name"
+                         app:dsb_max="50"
+                         app:dsb_min="0"
+                         app:dsb_value="5" />-->
+                    <ImageView
+                        android:id="@+id/location_settings"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings_white"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/home_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="151dp">
+
+
+                    </android.support.v4.view.ViewPager>
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        app:ci_drawable_unselected="@drawable/circleindicator"
+                        app:ci_drawable="@drawable/circleindicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">-->
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/banner_view"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    >
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <LinearLayout
+                    android:id="@+id/no_offers"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="184dp"
+                        android:src="@drawable/nodeals" />
+                    <TextView
+                        android:textColor="@color/black_overlay"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No offers available in your location"
+                        />
+                </LinearLayout>
+                <!--</LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

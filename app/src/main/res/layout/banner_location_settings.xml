@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/primary_dark_bg"
+    android:orientation="vertical"
+    android:padding="10dp"
+   >
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/cercleshapebg"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter offers by location"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:id="@+id/distance_text"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km(s)"
+            />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/filter_by_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="@string/app_name"
+            android:tooltipText="Distance"
+            app:dsb_indicatorTextAppearance="@string/app_name"
+            app:dsb_max="50"
+            app:dsb_min="0"
+            app:dsb_value="5" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            />
+
+        <Button
+            android:id="@+id/select_location"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/selected"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Map"/>
+
+    </LinearLayout>
+
+</LinearLayout>

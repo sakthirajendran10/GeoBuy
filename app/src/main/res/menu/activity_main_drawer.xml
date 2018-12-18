@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/offer_white"
+                android:title="Offer Zone" />
+            <item
+                android:id="@+id/notifications"
+                android:icon="@drawable/notifications_white"
+                android:title="Notifications" />
+
+            <item
+                android:id="@+id/wish_list"
+                android:icon="@drawable/favorite_white"
+                android:title="Wish List" />
+
+            <item
+                android:id="@+id/my_cart"
+                android:icon="@drawable/cart_white"
+                android:title="My Cart" />
+
+            <item
+                android:id="@+id/my_orders"
+                android:icon="@drawable/basket"
+                android:title="My Orders" />
+
+        </menu>
+    </item>
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/supervisor_white"
+                android:title="Support" />
+            <item
+                android:id="@+id/legal"
+                android:icon="@drawable/copyright_white"
+                android:title="Legal" />
+        </menu>
+    </item>
+
+</menu>

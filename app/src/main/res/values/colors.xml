@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#e40046</color>
+    <color name="colorPrimaryDark">#c7003d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#8af0fd</color>
+    <color name="primaryDark">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="colorblank">#f7f7f7</color>
+    <color name="darkGreen">#006400</color>
+    <color name="darkYellow">#ffb300</color>
+    <color name="darkRed">#FF0000</color>
+    <color name="DcolorPrimary">#FFC107</color>
+    <color name="DcolorPrimaryDark">#FFA000</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#28A52B</color>
+    <color name="DcolorAccent">#FF4081</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="primary_dark_bg">#333</color>
+    <color name="login_bg">#00395d</color>
+
+    <color name="light_gray">#878787</color>
+    <color name="primaryColorBlack">#333</color>
+    <drawable name="bg_screen1">#B33395ff</drawable>
+</resources>

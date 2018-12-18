@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sakthirajendran.geobuy.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cart_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorblank"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/nearby_ll"
+                    android:clickable="true"
+                    android:layout_weight="0.25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:elevation="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/nearby_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:src="@drawable/nearbyblack" />
+
+                    <TextView
+                        android:id="@+id/nearby_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_overlay"
+                        android:text="Nearby"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/category_ll"
+                    android:clickable="true"
+                    android:layout_weight="0.25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:elevation="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/category_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:src="@drawable/category_black" />
+
+                    <TextView
+                        android:id="@+id/category_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_overlay"
+                        android:text="Category"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:clickable="true"
+                    android:layout_weight="0.25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/home_layout"
+                    android:elevation="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/home_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:src="@drawable/home_black" />
+
+                    <TextView
+                        android:id="@+id/home_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_overlay"
+                        android:text="Home"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+              <!--  <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:elevation="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/prime_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:src="@drawable/prime_black" />
+
+                    <TextView
+                        android:id="@+id/prime_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prime"
+                        android:textSize="10dp" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/account_ll"
+                    android:clickable="true"
+                    android:layout_weight="0.25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:elevation="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/account_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:src="@drawable/account_black" />
+
+                    <TextView
+                        android:id="@+id/account_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_overlay"
+                        android:text="Account"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/footer"
+            android:fillViewport="true"
+            android:id="@+id/dashboard_content"
+            android:orientation="vertical"
+            >
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
+
